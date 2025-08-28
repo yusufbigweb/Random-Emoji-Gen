@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+<nav class="bg-gray-800 px-10 py-4 flex flex-col md:flex-row items-center justify-between sticky top-0 z-50">
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 w-full md:w-auto">
+        <a href="./" class="text-white font-semibold text-lg hover:text-yellow-400 transition">Home</a>
+        <a href="https://github.com/yusufbigweb/api-emoji" target="_blank" class="text-white font-semibold text-lg hover:text-yellow-400 transition">Get Emoji API</a>
+    </div>
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 w-full md:w-auto mt-2 md:mt-0">
+        <input type="text" placeholder="Search emoji..." class="px-3 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 transition w-full md:w-48" id="emoji-search">
+        <button class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition w-full md:w-auto">Search</button>
+    </div>
+</nav>
+
+
+
+
+<div class=" max-w-7xl mx-auto min-h-screen">
+    <div class="text-center py-8">
+        <h1 class="text-4xl font-bold text-white mb-4">Random Emoji Generator</h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+            Discover a vibrant collection of random emojis displayed in a dynamic grid. Each emoji brings its own unique charm, expressing emotions, ideas, and fun in a colorful way. Explore the variety and let your imagination run wild as you interact with this playful emoji showcase!
+        </p>
+    </div>
+
+    <div class="flex justify-center py-4">
+        <button onclick="location.reload()" class="flex items-center gap-2 bg-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+            <!-- Reload Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v6h6M20 20v-6h-6M5 19a9 9 0 0114-7.5M19 5A9 9 0 005 12.5" />
+            </svg>
+            Refresh Page
+        </button>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 py-[30px] px-[50px]" id="rows-inJs">
+        
+    </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
